@@ -13,6 +13,10 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+To flash, follow instructions at https://github.com/Massdrop/mdloader.
+Example command:
+qmk compile --keyboard massdrop/alt --keymap davidxia; and ./mdloader_mac --first --download /Users/dxia/src/qmk_firmware/.build/massdrop_alt_davidxia.bin --restart
 */
 
 #pragma once
@@ -127,7 +131,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_LED_PROCESS_LIMIT 15
 #define RGB_MATRIX_LED_FLUSH_LIMIT 10
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CUSTOM_CANDY_RAIN
+#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_TYPING_HEATMAP // RGB_MATRIX_CUSTOM_CANDY_RAIN
 
 // From https://github.com/qmk/qmk_firmware/blob/d51bb76ec96c35f3b5494f8dd0ecb2611dccd3df/docs/feature_rgb_matrix.md
 // That doc may be outdated. Check with
